@@ -1,0 +1,117 @@
+
+body{
+    margin: auto;
+    max-width: 1300px;   
+    background-color: rgba(211, 211, 211, 0.144);
+}
+header h1{
+    text-align: center;
+}
+header p{
+    margin-left: 8px;
+}
+ul{
+	list-style-type: none;
+	overflow: hidden;
+	background-color: lightskyblue;
+	margin: 0;
+	padding: 0;
+}
+li{
+	display: inline-block;
+	float: left;
+}
+a, .dropbtn{
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn{
+	background-color: hotpink;
+	padding: 0.99em;
+}
+li.dropdown {
+	display: inline-block;
+}
+.dropdown-content{
+	display: none;
+	position: absolute;
+	background-color: hotpink;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+.dropdown-content a{
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	width: 70%;
+}
+.dropdown-content a:hover { 
+	background-color: #f1f1f1;
+	border: 2px solid salmon;
+	width: 80%;
+	padding: 0.8em;
+ }
+.dropdown:hover .dropdown-content{
+	display: block;
+}
+.grid{
+    width: 66.666%;
+    float: left;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: salmon 1px solid;   
+}
+.blog{
+    width: 80%;
+    margin: auto;  
+    padding-bottom: 20px;
+}
+.satu p img{
+    width: 80%; 
+}
+.satu {
+    text-align: left;
+}
+aside{
+    width: 25%;
+    float: left;
+    margin-left: 40px;
+    margin-top: 45px;
+}
+.btn{
+    background-color: red;
+    padding: 5px 5px;
+}
+footer{
+	background-color: violet;
+	padding: 2px 0px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
